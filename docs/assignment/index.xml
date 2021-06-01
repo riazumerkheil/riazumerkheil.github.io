@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments on CAO Assinment</title>
+    <link>http://riazumerkheil.github.io/assignment/</link>
+    <description>Recent content in Assignments on CAO Assinment</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 May 2021 18:10:33 +0500</lastBuildDate><atom:link href="http://riazumerkheil.github.io/assignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Os Full Procedure(Click to view full procedure)</title>
+      <link>http://riazumerkheil.github.io/assignment/osbuild/</link>
+      <pubDate>Tue, 25 May 2021 18:10:33 +0500</pubDate>
+      
+      <guid>http://riazumerkheil.github.io/assignment/osbuild/</guid>
+      <description>Write Your Own 64-bit Operating System Kernel From Scratch You can find full code on my Git repo https://github.com/riazumerkheil/os.
+Prerequisites  A text editor such as VS Code. Docker for creating our build-environment. Qemu for emulating our operating system.  Remember to add Qemu to the path so that you can access it from your command-line. (Windows instructions here)    Setup Build an image for our build-environment:
+ docker build buildenv -t myos-buildenv  Build Enter build environment:</description>
+    </item>
+    
+  </channel>
+</rss>

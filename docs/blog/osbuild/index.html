@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Muhammad Riaz ">
+    <meta name="description" content="http://riazumerkheil.github.io">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="CAO Assinment">
+    <meta property="og:title" content="
+  Osbuild - CAO Assinment
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://riazumerkheil.github.io/blog/osbuild/">
+    <meta property="og:image" content="http://riazumerkheil.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="http://riazumerkheil.github.io/blog/osbuild/">
+    <meta name="twitter:image" content="http://riazumerkheil.github.io">
+
+    <base href="http://riazumerkheil.github.io/blog/osbuild/">
+    <title>
+  Osbuild - CAO Assinment
+</title>
+
+    <link rel="canonical" href="http://riazumerkheil.github.io/blog/osbuild/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="http://riazumerkheil.github.io/index.xml" type="application/rss+xml" title="CAO Assinment">
+      <link href="http://riazumerkheil.github.io/index.xml" rel="feed" type="application/rss+xml" title="CAO Assinment" />
+    
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">CAO Assinment</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item   align-left  ">
+              <a class="navigation-link" href="http://riazumerkheil.github.io/about/">About</a>
+            </li>
+          
+            <li class="navigation-item   align-left  ">
+              <a class="navigation-link" href="http://riazumerkheil.github.io/assignment/">Assignment</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Osbuild</h1>
+    </header>
+
+    <p>#working</p>
+<p>Write Your Own 64-bit Operating System Kernel From Scratch
+You can find full code on my Git repo <a href="https://github.com/awaisshah2280/myFirstOS.git">https://github.com/awaisshah2280/myFirstOS.git</a>.</p>
+<p>You can find code of this static site on repo <a href="https://github.com/awaisshah2280/mysite.git">https://github.com/awaisshah2280/mysite.git</a></p>
+<p>Prerequisites
+A text editor such as VS Code.
+Docker for creating our build-environment.
+Qemu for emulating our operating system.
+Remember to add Qemu to the path so that you can access it from your command-line. (Windows instructions here)
+Setup
+Build an image for our build-environment:</p>
+<p>docker build buildenv -t myos-buildenv
+Build
+Enter build environment:</p>
+<p>Linux or MacOS: docker run &ndash;rm -it -v &ldquo;$pwd&rdquo;:/root/env myos-buildenv
+Windows (CMD): docker run &ndash;rm -it -v &ldquo;%cd%&quot;:/root/env myos-buildenv
+Windows (PowerShell): docker run &ndash;rm -it -v &ldquo;${pwd}:/root/env&rdquo; myos-buildenv
+NOTE: If you are having trouble with an unshared drive, ensure your docker daemon has access to the drive you&rsquo;re development environment is in. For Docker Desktop, this is in &ldquo;Settings &gt; Shared Drives&rdquo; or &ldquo;Settings &gt; Resources &gt; File Sharing&rdquo;.
+Build for x86 (other architectures may come in the future):</p>
+<p>make build-x86_64
+To leave the build environment, enter exit.</p>
+<p>Emulate
+You can emulate your operating system using Qemu: (Don&rsquo;t forget to add qemu to your path!)</p>
+<p>qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso
+NOTE: When building your operating system, if changes to your code fail to compile, ensure your QEMU emulator has been closed, as this will block writing to kernel.iso.
+Alternatively, you should be able to load the operating system on a USB drive and boot into it when you turn on your computer. (I haven&rsquo;t actually tested this yet.)</p>
+<p>Cleanup
+Remove the build-evironment image:</p>
+<p>docker rmi myos-buildenv -f</p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

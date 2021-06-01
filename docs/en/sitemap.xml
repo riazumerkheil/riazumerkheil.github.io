@@ -14,18 +14,6 @@
                 href="http://riazumerkheil.github.io/categories/"
                 />
   </url><url>
-    <loc>http://riazumerkheil.github.io/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://riazumerkheil.github.io/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://riazumerkheil.github.io/"
-                />
-  </url><url>
     <loc>http://riazumerkheil.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -36,6 +24,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://riazumerkheil.github.io/tags/"
+                />
+  </url><url>
+    <loc>http://riazumerkheil.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://riazumerkheil.github.io/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://riazumerkheil.github.io/"
                 />
   </url>
 </urlset>
