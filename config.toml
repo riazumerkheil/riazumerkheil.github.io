@@ -16,11 +16,11 @@ enableEmoji = true
 # disqusShortname = "yourdiscussshortname"
 
 [params]
-author = "Muhammad Riaz "
+author = "Muhammad Riaz " 
 description = "My Coal Assignment"
 keywords = "blog,developer,personal"
 info = "Web Developer and Designer"
-avatarURL = "images/download.jpg" 
+avatarURL = "images/download1.JPG" 
 #gravatar = "john.doe@example.com"
 footerContent = "Love to Learn"
 dateFormat = "January 2, 2006"
